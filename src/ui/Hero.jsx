@@ -1,7 +1,9 @@
+import Button from './Button';
+
 function Hero() {
   return (
     <section id='home'>
-      <div className='container'>
+      <div className='hero-container'>
         <div className='hero-headline-container column'>
           <h1>
             Joshua is a frontend web developer with a background in landscape
@@ -10,13 +12,15 @@ function Hero() {
           </h1>
         </div>
       </div>
-      <div className='container'>
+      <div className='hero-container'>
         <div className='hero-dev-container column'>
-          <ul>
+          <ul className='info'>
             <h4>Dev skills</h4>
+            <br />
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
+            <br />
             <li>Git</li>
             <li>React</li>
             <li>React Query</li>
@@ -27,25 +31,40 @@ function Hero() {
           </ul>
         </div>
         <div className='hero-design-container column'>
-          <ul>
+          <ul className='info'>
             <h4>Design & other tech skills</h4>
+            <br />
             <li>Photoshop</li>
             <li>Illustrator</li>
             <li>Figma</li>
             <li>InDesign</li>
             <li>After Effects</li>
-            <li>& more...</li>
+            <br />
+            <li>
+              <Button $variation='secondary'> & more...</Button>
+            </li>
           </ul>
         </div>
         <div className='hero-img-container column'></div>
         <div className='hero-contact-container column'>
-          <ul>
+          <ul className='info'>
             <h4>Contact</h4>
-            <li>Github</li>
-            <li>LinkendIn</li>
-            <li>Email</li>
-            <li>X</li>
-            <li>Instagram</li>
+            <br />
+            <li>
+              <Button $variation='secondary'>Github</Button>
+            </li>
+            <li>
+              <Button $variation='secondary'>LinkendIn</Button>
+            </li>
+            <li>
+              <Button $variation='secondary'>Email</Button>
+            </li>
+            <li>
+              <Button $variation='secondary'>X</Button>
+            </li>
+            <li>
+              <Button $variation='secondary'>Instagram</Button>
+            </li>
           </ul>
         </div>
       </div>

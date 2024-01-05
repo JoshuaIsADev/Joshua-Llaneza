@@ -54,8 +54,27 @@ li {
   list-style: none;
 }
 
+ul.nav {
+  display: flex;
+  gap: 3rem;
+}
+
+ul li {
+  font-size: .875rem;
+  font-weight: 400;
+  padding-bottom: .2rem;
+}
+
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: .875rem;
+  font-weight: 400;
+  color: var(--color-grey-300)
 }
 
 #home,
@@ -63,10 +82,21 @@ h1 {
   align-items: center;
 }
 
-.container {
+.heading-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: var(--container-width);
+}
+
+.hero-container,
+.work-container {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+  padding: 0 10rem;
   max-width: var(--container-width);
 }
 
@@ -87,6 +117,10 @@ h1 {
   --width: 1;
 }
 
+//OVERRIDES
+.faded {
+  color: var(--color-grey-300)
+}
 
 
 `;
