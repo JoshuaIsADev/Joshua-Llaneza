@@ -1,3 +1,4 @@
+import GlobalStyles from './GlobalStyles';
 import logo from './logo.svg';
 import Header from './ui/Header';
 import Hero from './ui/Hero';
@@ -5,6 +6,7 @@ import Hero from './ui/Hero';
 function App() {
   return (
     <>
+      <GlobalStyles />
       <Header />
       <main>
         <Hero />
