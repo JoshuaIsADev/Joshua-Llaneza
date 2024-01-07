@@ -56,7 +56,7 @@ const variations = {
 };
 
 const Button = styled.button`
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 500;
   text-transform: uppercase;
   border-radius: 1.5rem;

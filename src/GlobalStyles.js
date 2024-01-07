@@ -53,7 +53,7 @@ html {
 ul li,
 h4,
 a {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -67,10 +67,10 @@ li {
   
 }
 
-ul.nav {
+/* ul.nav {
   display: flex;
   gap: 3rem;
-}
+} */
 
 
 h1 {
@@ -87,13 +87,13 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 500;
   text-transform: uppercase;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 500;
   text-transform: uppercase;
   line-height:.75rem;
@@ -107,7 +107,7 @@ small {
 #home,
 #work {
   align-items: center;
-  margin-bottom: 15rem;
+  margin-bottom: 5rem;
 }
 
 .header-container,
@@ -117,39 +117,9 @@ small {
   flex-direction: row;
   margin: 0 auto;
   max-width: var(--container-width);
+  justify-content: right;
 }
 
-.header-container {
-  width: var(--container-width);
-}
-
-header {
-  display: flex;
-  flex-wrap: nowrap;
-  margin: 0 auto;
-  position: fixed;
-  width: 100%;
-}
-
-.content-container {
-  display: flex;
-  flex-wrap: nowrap;
-  width: 50%;
-  padding: .25rem;
-}
-
-.content {
-  display: flex;
-  flex-wrap: wrap;
-  width: 50%;
-  padding: .25rem;
-}
-
-.hero-headline {
-  width: 75%;
-  padding: .25rem;
-  margin: 10rem 0 0rem;
-}
 
 /* .summary-container {
   display: flex;
@@ -179,7 +149,7 @@ img {
   *,
   *::before,
   *::after {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
