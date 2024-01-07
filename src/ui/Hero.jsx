@@ -1,32 +1,31 @@
 import Button from './Button';
 import ProfileImg from '../img/joshua.jpg';
-import { Article, ArticleHero } from './Article';
-import Column from './Column';
-import Row from './Row';
+import { ArticleColumn, ArticleColumnHeader } from './ArticleColumn';
+import InfoCardColumn from './InfoCardColumn';
+import ArticleRow from './ArticleRow';
+import InfoCardRow from './InfoCardRow';
 
 function Hero() {
   return (
     <>
       <section id='home'>
-        <div className='container'>
-          <ArticleHero>
-            <h1>
-              Joshua is a front end developer with a background in landscape
-              architecture and design. From large urban landscapes to now the
-              digital realm, he enjoys solving problems through design and tech.
-            </h1>
-          </ArticleHero>
-        </div>
+        <ArticleRow>
+          <ArticleColumnHeader>
+            Joshua is a front end developer with a background in landscape
+            architecture and design. From large urban landscapes to now the
+            digital realm, he enjoys solving problems through design and tech.
+          </ArticleColumnHeader>
+        </ArticleRow>
       </section>
 
       <section>
-        <div className='container'>
-          <Article>
-            <Row>
-              <Column>
+        <ArticleRow>
+          <ArticleColumn>
+            <InfoCardRow>
+              <InfoCardColumn>
                 <h4>Dev skills</h4>
-              </Column>
-              <Column>
+              </InfoCardColumn>
+              <InfoCardColumn>
                 <ul className='info'>
                   <li>HTML</li>
                   <li>CSS</li>
@@ -40,13 +39,13 @@ function Hero() {
                   <li>Supabase</li>
                   <li>Node.js</li>
                 </ul>
-              </Column>
-            </Row>
-            <Row>
-              <Column>
+              </InfoCardColumn>
+            </InfoCardRow>
+            <InfoCardRow>
+              <InfoCardColumn>
                 <h4>Design skills</h4>
-              </Column>
-              <Column>
+              </InfoCardColumn>
+              <InfoCardColumn>
                 <ul>
                   <li>Photoshop</li>
                   <li>Illustrator</li>
@@ -58,13 +57,13 @@ function Hero() {
                     <Button $variation='secondary'> & more...</Button>
                   </li>
                 </ul>
-              </Column>
-            </Row>
-            <Row>
-              <Column>
+              </InfoCardColumn>
+            </InfoCardRow>
+            <InfoCardRow>
+              <InfoCardColumn>
                 <h4>Contact</h4>
-              </Column>
-              <Column>
+              </InfoCardColumn>
+              <InfoCardColumn>
                 <ul>
                   <li>
                     <a href='https://github.com/JoshuaIsADev'>Github</a>
@@ -86,13 +85,13 @@ function Hero() {
                     </a>
                   </li>
                 </ul>
-              </Column>
-            </Row>
-          </Article>
-          <Article>
+              </InfoCardColumn>
+            </InfoCardRow>
+          </ArticleColumn>
+          <ArticleColumn>
             <img src={ProfileImg} className='image-container' />
-          </Article>
-        </div>
+          </ArticleColumn>
+        </ArticleRow>
       </section>
     </>
   );

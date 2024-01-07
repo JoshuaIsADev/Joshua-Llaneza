@@ -105,17 +105,6 @@ small {
   margin-bottom: 5rem;
 }
 
-.header-container,
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin: 0 auto;
-  max-width: var(--container-width);
-  justify-content: right;
-}
-
-
 /* .summary-container {
   display: flex;
   flex-wrap: wrap;
