@@ -56,11 +56,13 @@ const variations = {
 };
 
 const Button = styled.button`
-  font-size: 0.875rem;
-  font-weight: 400;
-  border-radius: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 1.5rem;
   height: fit-content;
-  padding: 0.4rem 1rem;
+  padding: 0.4rem 1.5rem;
+  /* margin-bottom: 0.5rem; */
   cursor: pointer;
   transition: all ease-in 0.1s;
   ${(props) => variations[props.$variation]}
