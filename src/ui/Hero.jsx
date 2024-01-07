@@ -60,51 +60,38 @@ function Hero() {
                 </ul>
               </Column>
             </Row>
-          </Article>
-          {/* <div className='content'>
-              <ul className='info'>
-                <h4>Design skills</h4>
-                <br />
-                <li>Photoshop</li>
-                <li>Illustrator</li>
-                <li>Figma</li>
-                <li>InDesign</li>
-                <li>After Effects</li>
-                <br />
-                <li>
-                  <Button $variation='secondary'> & more...</Button>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className='content-container'>
-            <div className='content'>
-              <img src={ProfileImg} alt='' className='image' />
-            </div>
-
-            <div className='content'>
-              <ul className='info'>
+            <Row>
+              <Column>
                 <h4>Contact</h4>
-                <br />
-                <li>
-                  <a href='https://github.com/JoshuaIsADev'>Github</a>
-                </li>
-                <li>
-                  <a href='https://www.linkedin.com/in/joshuallaneza/'>
-                    LinkendIn
-                  </a>
-                </li>
-                <li>
-                  <a href='mailto:joshuaisadev@gmail.com'>Email</a>
-                </li>
-                <li>
-                  <a href='https://twitter.com/JoshuaIsADev'>X</a>
-                </li>
-                <li>
-                  <a href='https://www.instagram.com/joshual3399/'>Instagram</a>
-                </li>
-              </ul>
-            </div> */}
+              </Column>
+              <Column>
+                <ul>
+                  <li>
+                    <a href='https://github.com/JoshuaIsADev'>Github</a>
+                  </li>
+                  <li>
+                    <a href='https://www.linkedin.com/in/joshuallaneza/'>
+                      LinkendIn
+                    </a>
+                  </li>
+                  <li>
+                    <a href='mailto:joshuaisadev@gmail.com'>Email</a>
+                  </li>
+                  <li>
+                    <a href='https://twitter.com/JoshuaIsADev'>X</a>
+                  </li>
+                  <li>
+                    <a href='https://www.instagram.com/joshual3399/'>
+                      Instagram
+                    </a>
+                  </li>
+                </ul>
+              </Column>
+            </Row>
+          </Article>
+          <Article>
+            <img src={ProfileImg} className='image-container' />
+          </Article>
         </div>
       </section>
     </>

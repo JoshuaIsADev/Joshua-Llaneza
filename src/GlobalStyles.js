@@ -67,11 +67,6 @@ li {
   
 }
 
-/* ul.nav {
-  display: flex;
-  gap: 3rem;
-} */
-
 
 h1 {
   font-size: 3rem;
@@ -129,12 +124,15 @@ small {
 } */
 
 img {
-  /* object-fit: fill; */
+  object-fit: cover;
+  object-position: top ;
+  width: 100%;
+  height: 100%;
 }
 
-.image {
-  width: 75%;
-  object-fit: cover;
+.image-container {
+  width: 100%;
+  height: 600px;
 }
 
 //MEDIA QUERIES
