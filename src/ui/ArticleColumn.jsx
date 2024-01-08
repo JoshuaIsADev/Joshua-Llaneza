@@ -11,8 +11,9 @@ const StyledArticleColumn = styled.div`
   flex-wrap: wrap;
   flex-direction: column;
   width: 50%;
-  padding: 0.25rem;
+  /* padding: 0.25rem; */
   justify-content: space-between;
+  gap: 1rem;
   ${(props) => variations[props.$variation]}
 `;
 

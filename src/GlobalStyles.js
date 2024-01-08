@@ -91,7 +91,7 @@ p {
   font-size: 1rem;
   font-weight: 500;
   text-transform: uppercase;
-  line-height:.75rem;
+  line-height:1rem;
 }
 
 small {
@@ -99,8 +99,10 @@ small {
   font-weight: 500;
 }
 
-#home,
-#work {
+#about,
+#about-detail,
+#work,
+.work-detail {
   align-items: center;
   margin-bottom: 5rem;
 }
@@ -116,22 +118,21 @@ img {
   object-fit: cover;
   object-position: top ;
   width: 100%;
-  height: 100%;
 }
 
 .image-container {
   width: 100%;
-  height: 600px;
+  max-height: 600px;
 }
 
 //MEDIA QUERIES
-@media (max-width: 1550px) {
+/* @media (max-width: 1550px) {
   *,
   *::before,
   *::after {
     font-size: 12px;
   }
-}
+} */
 @media (max-width: 1100px) {
   *,
   *::before,

@@ -1,5 +1,5 @@
 import Button from './Button';
-import ProfileImg from '../img/joshua.jpg';
+import ProfileImg from '../data/img/joshua.jpg';
 import { ArticleColumn, ArticleColumnHeader } from './ArticleColumn';
 import InfoCardColumn from './InfoCardColumn';
 import ArticleRow from './ArticleRow';
@@ -8,7 +8,7 @@ import InfoCardRow from './InfoCardRow';
 function Hero() {
   return (
     <>
-      <section id='home'>
+      <section id='about'>
         <ArticleRow>
           <ArticleColumnHeader>
             Joshua is a front end developer with a background in landscape
@@ -18,7 +18,7 @@ function Hero() {
         </ArticleRow>
       </section>
 
-      <section>
+      <section id='about-detail'>
         <ArticleRow>
           <ArticleColumn>
             <InfoCardRow>
@@ -89,7 +89,7 @@ function Hero() {
             </InfoCardRow>
           </ArticleColumn>
           <ArticleColumn>
-            <img src={ProfileImg} className='image-container' />
+            <img src={ProfileImg} className='image-container' alt='profile' />
           </ArticleColumn>
         </ArticleRow>
       </section>

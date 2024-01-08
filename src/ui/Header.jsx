@@ -7,16 +7,18 @@ const StyledHeader = styled.header`
   flex-wrap: nowrap;
   margin: 0 auto;
   position: fixed;
+  top: 1rem;
   right: 50%;
   transform: translate(50%);
-  width: var(--container-width);
+  width: 100%;
+  max-width: var(--container-width);
 `;
 
 const StyledNav = styled.nav`
   display: flex;
   flex-wrap: nowrap;
   width: 50%;
-  padding: 0.25rem;
+  /* padding: 0.25rem; */
 `;
 
 function Header() {
