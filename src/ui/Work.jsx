@@ -4,23 +4,42 @@ import { ArticleColumnHeader } from './ArticleColumn';
 import ArticleRow from './ArticleRow';
 import WorkCard from './WorkCard';
 
+function renderWorkCards() {
+  return workData.map((workItem) => {
+    const {
+      id,
+      title,
+      client,
+      tech,
+      features,
+      summary,
+      liveLink,
+      liveDummyLink,
+      githubLink,
+      image,
+    } = workItem;
+
+    const techString = joinString(tech);
+    const featuresString = joinString(features);
+
+    return (
+      <WorkCard
+        key={id}
+        title={title}
+        client={client}
+        tech={techString}
+        features={featuresString}
+        summary={summary}
+        liveLink={liveLink}
+        liveDummyLink={liveDummyLink}
+        githubLink={githubLink}
+        image={image}
+      />
+    );
+  });
+}
+
 function Work() {
-  const {
-    id,
-    title,
-    client,
-    tech,
-    features,
-    summary,
-    liveLink,
-    githubLink,
-    image,
-  } = workData[0];
-  console.log(tech);
-
-  const techString = joinString(tech);
-  const featuresString = joinString(features);
-
   return (
     <>
       <section id='work'>
@@ -29,17 +48,7 @@ function Work() {
         </ArticleRow>
       </section>
 
-      <WorkCard
-        id={id}
-        title={title}
-        client={client}
-        tech={techString}
-        features={featuresString}
-        summary={summary}
-        liveLink={liveLink}
-        githubLink={githubLink}
-        image={image}
-      />
+      {renderWorkCards()}
     </>
   );
 }

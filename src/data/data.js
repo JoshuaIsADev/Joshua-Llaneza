@@ -21,11 +21,9 @@ const workData = [
     summary: `The objective of this project was to promote the client as an author and allow her to create, write, update, and delete content for her website through a user-friendly interface.
     
     I used Supabase for all the data, and created a custom content management system in React with secure login functionality.`,
-    links: [
-      'maikallaneza.com',
-      'maikallaneza.com/dummylogin',
-      'https://github.com/JoshuaIsADev/Maika-Llaneza-v2',
-    ],
+    liveLink: 'maikallaneza.com',
+    liveDummyLink: 'maikallaneza.com/dummylogin',
+    githubLink: 'https://github.com/JoshuaIsADev/Maika-Llaneza-v2',
     image: '/img/Screenshot05.jpg',
   },
 
@@ -36,10 +34,9 @@ const workData = [
     tech: ['Vanilla Javascript', 'CSS', 'HTML'],
     features: ['API Fetch'],
     summary: `The MET allows people to appreciate European paintings from the Metropolitan Museum archive. Users can resize the image, hide the text, and display the next image. Custom button icons were created in Figma.`,
-    links: [
-      'https://jade-buttercream-dfbb00.netlify.app/',
-      'https://github.com/JoshuaIsADev/The-MET-v3',
-    ],
+    liveLink: 'https://jade-buttercream-dfbb00.netlify.app/',
+    githubLink: 'https://github.com/JoshuaIsADev/The-MET-v3',
+
     image: '/img/Screenshot05.jpg',
   },
 
@@ -50,10 +47,8 @@ const workData = [
     tech: ['Vanilla Javascript', 'CSS', 'HTML'],
     features: ['Create', 'Write', 'Update', 'Delete', 'mobile-first'],
     summary: `The MET allows people to appreciate European paintings from the Metropolitan Museum archive. Users can resize the image, hide the text, and display the next image. Custom button icons were created in Figma.`,
-    links: [
-      'https://soft-heliotrope-972274.netlify.app/',
-      'https://github.com/JoshuaIsADev/Slide',
-    ],
+    liveLink: 'https://soft-heliotrope-972274.netlify.app/',
+    githubLink: 'https://github.com/JoshuaIsADev/Slide',
     image: '/img/Screenshot05.jpg',
   },
 ];

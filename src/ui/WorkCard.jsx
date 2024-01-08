@@ -54,6 +54,12 @@ function WorkCard(props) {
                 <li>
                   <a href={props.liveLink}>View Live</a>
                 </li>
+                {props.liveDummyLink && (
+                  <li>
+                    <a href={props.liveDummyLink}>View Dummy CMS Live</a>
+                  </li>
+                )}
+
                 <li>
                   <a href={props.githubLink}>Github</a>
                 </li>
